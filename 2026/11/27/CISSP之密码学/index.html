@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#0aa6a0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0aa6a0" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 8.1.2">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#0aa6a0">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha256-4Lad8m4ZWW1Lgb9+sMVLYEfnIh7BjV1NQMEe79Pviks=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","darkmode":true,"version":"8.29.1","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js" defer></script>
+
+    <meta name="description" content="对称密码&#x2F;非对称密码&#x2F;哈希函数&#x2F;数字签名&#x2F;公钥起初设施&#x2F;混合加密法&#x2F;应用密码学.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CISSP--密码学">
+<meta property="og:url" content="http://example.com/2026/11/27/CISSP%E4%B9%8B%E5%AF%86%E7%A0%81%E5%AD%A6/index.html">
+<meta property="og:site_name" content="It&#39;s Me.">
+<meta property="og:description" content="对称密码&#x2F;非对称密码&#x2F;哈希函数&#x2F;数字签名&#x2F;公钥起初设施&#x2F;混合加密法&#x2F;应用密码学.">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2026-11-27T11:57:14.000Z">
+<meta property="article:modified_time" content="2026-11-27T13:05:42.502Z">
+<meta property="article:author" content="BWTY">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://example.com/2026/11/27/CISSP%E4%B9%8B%E5%AF%86%E7%A0%81%E5%AD%A6/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2026/11/27/CISSP%E4%B9%8B%E5%AF%86%E7%A0%81%E5%AD%A6/","path":"2026/11/27/CISSP之密码学/","title":"CISSP--密码学"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>CISSP--密码学 | It's Me.</title>
+  
+
+
+
+
+
+
+
+
+  
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-search popup-trigger" aria-label="Search" role="button">
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+        <p class="site-title" itemprop="description">Welcome to my Blog.</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-toggle" aria-label="Toggle navigation bar" role="button">
+  </div>
+</div>
+
+
+
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">BWTY</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2026/11/27/CISSP%E4%B9%8B%E5%AF%86%E7%A0%81%E5%AD%A6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="BWTY">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="It's Me.">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="CISSP--密码学 | It's Me.">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          CISSP--密码学
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2026-11-27 19:57:14 / Modified: 21:05:42" itemprop="dateCreated datePublished" datetime="2026-11-27T19:57:14+08:00">2026-11-27</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>对称密码&#x2F;非对称密码&#x2F;哈希函数&#x2F;数字签名&#x2F;公钥起初设施&#x2F;混合加密法&#x2F;应用密码学.</p>
+<span id="more"></span>
+
+<p>密码基础<br>密码基本目标：保密性+完整性+身份认证+不可否认性<br>五元组：明文[P]+密文[C]+密钥[K]+加密[E]+解密[D]<br>密钥：密钥大小由位大小(bite size)决定，范围从0-2ⁿ(n是位大小)</p>
+<p>逻辑运算<br>与：全真为真，一假即假<br>或：一真即真，全假为假<br>非：取反[用~x表示]<br>异或：相同取假，相反取真<br>模运算：取余[eg:8mod6&#x3D;2]</p>
+<p>nonce：用于取随机数<br>零知识证明：通过完成某个任务的方式，证明自己拥有口令或密码<br>分隔知识：权限分割，eg:N之取M控制[8之取3等同于拥有权限的8个人，其中3个在场即可取得密钥]<br>代价函数：衡量密码强度[代价函数值仅需略大于爆破时间值]</p>
+<p>古典密码<br>移位密码：行作顺序，列作值[对K的字母顺序排序，将明文对齐K长度续写，最后将列按K的字母顺序进行合并]<br>替换密码：1.凯撒密码(ROT3)[A+3-&gt;D&#x2F;B+3-&gt;E] K&#x3D;1;<br>         2.维吉尼亚密码(彩虹表&#x2F;C&#x3D;(P+3)mod26)[P作行，K作列且常为词或句]<br>         3.单次秘本(C&#x3D;(P+K)mod26)[K与P一样长，且只可使用一次(为明文消息中每一个字母使用不同的替换字母表)]<br>运动密钥密码(也称书密码)：K与P一样长，K常选自书&#x2F;杂志等的某句话[eg:明文[RICH]+密钥[WITH]，二者取模，密文[NQVO]]<br>块密码(在消息”块”上运算)：eg:移位密码<br>流密码(一次在消息或消息流的一个字符&#x2F;位上进行)：eg：凯撒&#x2F;单次密本<br>混淆&amp;扩散：eg：在某个算法先进行替换，然后通过移位重新排列被替换的字符位置<br>        替换作用就是混淆&#x2F;移位作用就是扩散</p>
+<p>现代密码学<br>常用三类算法：对称加密&#x2F;非对称加密&#x2F;哈希算法<br>1.对称加密[K相同&#x2F;用于海量加密，只提供保密性安全服务]<br>当K仅用作单次会话的短暂K，此时的K也称作临时K<br>    常见于传输层安全协议TLS[临时K用于生成对称密码&#x2F;非对称K用于生成加密信道]<br>K数量(n为参与人数)：<sup>n(n-1)</sup><span class="token entity named-entity" title="⁄">&frasl;</span><sub>2</sub><br>弱点：1.K分发(存在被攻击者获取情况)；2.对称K加密法不提供不可否认性(无法判断是由谁发出)；3.K缺乏可扩展性；4.K经常重新生成<br>2.非对称加密[公K(所有用户&amp;公K1)+私K(单个用户&amp;私K1)]<br>保证消息由Bob发出：1.创建消息摘要(哈希)；2.Bob使用私K加密摘要；3.其他用户用公K解密并验证验证被解密消息摘要准确性<br>优点：1.添加新用户只需生成一个公私K对；2.便于非对称加密系统移除用户；3.只需在User私K失信时重新生成K；4.非对称加密K提供保密性+身份认证+不可否认性；5.K分发简便易行；6.无需预先建立通信管关联<br>弱点：运算速度慢<br>3.哈希算法[消息摘要，也叫哈希值&#x2F;指纹]<br>4.安全传输大量数据先用公K建立连接，以此交换对称K，再让剩余会话使用对称加密，这称之为混合加密</p>
+<p>密码类型<br>对称加密<br>1.运行模式<br>电子密码本模式[ECB&#x2F;不安全] 每次处理一个64位块且只用选好的K给块加密(同P&#x2F;C)，只交换少量数据<br>密码块链接模式[CBC] 每个未加密被加密前需借助上一密文块进行异或运算，解密需解密C并反向异或运算，初始向量(IV)需发生给C的接收者、<br>密码反馈模式[CFB]   针对实时生成数据进行运算[用与块大小相同的存储缓冲区进行]，系统在缓冲区填满时才对数据进行加密，将C发送给接收者，依次填满加密传输[和CBC相同使用IV和链接]<br>输出反馈模式[OFB]   与CFC完全相同[不是对密文块进行异或运算，而是与种子]，初始化向量创建种子值，后续种子值用算法在前一种子值基础上运算得出，不存在链接函数，传播错误不会传播<br>计数器模式[CTR]     与CFB&#x2F;OFB类似的流密码，用简单计数器为每次运算增量<br>Galois&#x2F;计数器模式[GCM] CTR+数据真实性控制(添加身份认证标记实现)<br>带密码块链接消息验证码计数器模式[CCM] CTR+CBC-MAC(保证数据真实性的密码块链接消息验证码)</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2026/11/24/First-Git-Blog/" rel="prev" title="First-Git-Blog">
+                  <i class="fa fa-angle-left"></i> First-Git-Blog
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">BWTY</span>
+  </div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+</body>
+</html>
